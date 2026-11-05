@@ -1,10 +1,10 @@
 [project]
-name = "quick-recipe"
+name = "image-to-recipe"
 version = "0.1.0"
-description = "Add your description here"
+description = "Vision agent that identifies ingredients in a photo and finds a recipe that uses them"
 readme = "README.md"
 authors = [
-    { name = "eduardo merchan", email = "eduardomerchansalamea@gmail.com" }
+    { name = "Eduardo Merchan" }
 ]
 requires-python = ">=3.11"
 dependencies = [
@@ -14,9 +14,5 @@ dependencies = [
     "tavily>=1.1.0",
 ]
 
-[project.scripts]
-quick-recipe = "quick_recipe:main"
-
-[build-system]
-requires = ["uv_build>=0.13.6,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
